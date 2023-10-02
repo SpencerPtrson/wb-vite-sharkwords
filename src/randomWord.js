@@ -1,3 +1,4 @@
+import sample from 'lodash.sample';
 const words = [
   'strawberry',
   'orange',
@@ -13,4 +14,6 @@ const words = [
   'chocolate',
 ];
 
-function getRandomWord() {}
+function getRandomWord() { return sample(words);}
+
+export default getRandomWord; // export a default because it's the only thing we're exporting
