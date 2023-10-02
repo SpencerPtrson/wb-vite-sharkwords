@@ -2,8 +2,6 @@ let word;
 
 function setupWord(initWord, element) {
   word = initWord;
-  console.log("Setting Word:", word, "<- initWord:", initWord )
-
   word.split('').forEach(() => {
     element.insertAdjacentHTML('beforeend', `<div class="letter-box"></div>`);
   });
